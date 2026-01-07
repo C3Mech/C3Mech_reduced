@@ -1,0 +1,6 @@
+The mechanism files placed in the "Source" directory are the ones used to generate Cantera-compatible mechanism files (.yaml).
+
+Chemkin mechanisms allow setting individual parameters for specific third bodies using the keywords LOWMX/TROEMX and LOWSP/TROESP, which are used for the reaction H+O2(+M)=HO2(+M). However, since Cantera does not support these keywords, attempting to compile the mechanisms in the Chemkin folder for Cantera will result in errors.
+
+To avoid this, the mechanism files included in the folder define H+O2(+N2)=HO2(+N2) and H+O2(+HE)=HO2(+HE) separately for compilation.
+Due to this reason, the numbers of reactions differ between Chemkin and Cantera mechanisms. The reported numbers in the manuscript are for Cantera mechanism.
