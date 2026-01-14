@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the following article."
+title: "C3MechLite: An integrated component library of compact kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels"
+
+preferred-citation:
+  type: article
+  title: "C3MechLite: An integrated component library of compact kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels"
+  authors:
+    - family-names: Murakami
+      given-names: Yuki
+    - family-names: Wang
+      given-names: Quan-De
+    - family-names: Liu
+      given-names: Shuaishuai
+    - family-names: Zhu
+      given-names: Yuxiang
+    - family-names: Wang
+      given-names: Pengzhi
+    - family-names: Pratali Maffei
+      given-names: Luna
+    - family-names: Langer
+      given-names: Raymond
+    - family-names: Faravelli
+      given-names: Tiziano
+    - family-names: Pitsch
+      given-names: Heinz
+    - family-names: Klippenstein
+      given-names: Stephen J.
+    - family-names: Bergthorson
+      given-names: Jeff
+    - family-names: Bourque
+      given-names: Gilles
+    - family-names: Wagnon
+      given-names: Scott
+    - family-names: Senecal
+      given-names: Peter Kelly
+    - family-names: Curran
+      given-names: Henry J.
+  year: 2025
+  journal: Combustion and Flame
+  volume: 282
+  pages: 114410
+  doi: 10.1016/j.combustflame.2025.114410
+  url: https://www.sciencedirect.com/science/article/pii/S001021802500447X
+  identifiers:
+    - type: issn
+      value: 0010-2180

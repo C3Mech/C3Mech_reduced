@@ -1,0 +1,243 @@
+! ================================================================================================== !
+!                                                                                                    !
+!            C3MechLite: An Integrated Component Library of Compact Kinetic Mechanisms               !
+!                      for Low-Carbon, Carbon Neutral and Zero-Carbon Fuels                          !
+!                                                                                                    !
+! ================================================================================================== !
+!                                                                                                    !
+! C3MechLiteV4.0.1 and C3MechCoreV4.0.1 have been generated based on C3MechV4.0.1 formulated         !
+! by the Computational Chemistry Consortium (C3), a collaborative research organization              !
+! including the University of Galway, Politecnico di Milano, RWTH Aachen University,                 !
+! Lawrence Livermore National Laboratory, Argonne National Laboratory and Convergent Science.        !
+!                                                                                                    !
+! < C3MechLiteV4.0.1 >                                                                               !
+! - 61 species and 519 reactions                                                                     !
+! - Intended to simulate natural gas combustion with NOx chemistry                                   !
+! - Targetting H2, CO, NH3, CH4, CH3OH, Natural gas(CH4+C2H6/C3H8), and NOx                          !
+!                                                                                                    !
+! < C3MechCoreV4.0.1 >                                                                               !
+! - 118 species and 1006 reactions                                                                   !
+! - Covering a wider range of fuels up to C3                                                         !
+! - Targetting H2, CO, NH3, CH4, CH3OH, C2H6, DME, C2H5OH, C3H8, and NOx                             !
+!                                                                                                    !
+! C3MechV4.0.1 is available from the github repository:                                              !
+! https://github.com/C3Mech/C3MechV4.0.1                                                             !
+!                                                                                                    !
+! For more information, please visit fuelmech.org.                                                   !
+!                                                                                                    !
+! ============================== Working Groups For C3MechLite/Core ================================ !
+!                                                                                                    !
+! Combustion Chemistry Centre, University of Galway, Ireland                                         !
+! Yuki Murakami, Pengzhi Wang, Yuxiang Zhu,  Henry J. Curran                                         !
+!                                                                                                    !
+! Carbon Neutrality Institute and School of Chemical Engineering,                                    !
+! China University of Mining and Technology, China                                                   !
+! Quan-De Wang                                                                                       !
+!                                                                                                    !
+! Alternative Fuels Laboratory, Department of Mechanical Engineering,                                !
+! McGill University, Canada                                                                          !
+! Gilles Bourque, Jeff Bergthorson                                                                   !
+!                                                                                                    !
+! CRECK Modeling Laboratory, Politecnico di Milano, Italy                                            !
+! Luna Pratali Maffei, Tiziano Faravelli                                                             !
+!                                                                                                    !
+! Institute for Combustion Technology, RWTH Aachen University, Germany                               !
+! Raymond Langer, Heinz Pitsch                                                                       !
+!                                                                                                    !
+! Lawrence Livermore National Laboratory, United States of America                                   !
+! Scott W. Wagnon                                                                                    !
+!                                                                                                    !
+! Argonne National Laboratory, United States of America                                              !
+! Stephen J. Klippenstein                                                                            !
+!                                                                                                    !
+! Convergent Science, United States of America                                                       !
+! Shuaishuai Liu, Peter Kelly Senecal                                                                !
+!                                                                                                    !
+! ================================================================================================== !
+!                              !!! Please do not remove this header !!!                              !
+! ================================================================================================== !
+
+! C3MechLiteV4.0.1_H2-CO_14sp
+
+ELEMENTS
+C H N O AR HE
+END
+
+SPECIES ! (14 species)
+HE                  H2                  H                   O                   
+OH                  H2O                 O2                  N2                  
+AR                  H2O2                HO2                 CO2                 
+CO                  HCO                 
+END
+
+REACTIONS ! (42 reactions)
+
+! Reaction 1
+H2+M=2H+M                           4.577000e+19      -1.400000e+00       1.044000e+05
+    CO / 1.9 / CO2 / 3.8 / H2 / 2.5 / H2O / 12.0 / HE / 0.83 / O2 / 0.0 / 
+
+! Reaction 2
+2H+O2=H2+O2                         8.800000e+22      -1.835000e+00       8.000000e+02
+
+! Reaction 3
+H2+O=H+OH                           3.800000e+12       0.000000e+00       7.948000e+03
+DUPLICATE
+
+! Reaction 4
+H2+O=H+OH                           8.800000e+14       0.000000e+00       1.917500e+04
+DUPLICATE
+
+! Reaction 5
+H2+OH=H+H2O                         2.200000e+08       1.510000e+00       3.430000e+03
+
+! Reaction 6
+2H+O2=2OH                           4.000000e+22      -1.835000e+00       8.000000e+02
+
+! Reaction 7
+H+O+O2=OH+O2                        7.350000e+22      -1.835000e+00       8.000000e+02
+
+! Reaction 8
+H+O+M=OH+M                          4.714000e+18      -1.000000e+00       0.000000e+00
+    AR / 0.75 / CO / 1.5 / CO2 / 2.0 / H2 / 2.5 / H2O / 12.0 / HE / 0.75 / O2 / 0.0 / 
+
+! Reaction 9
+H+OH+O2=H2O+O2                      2.560000e+22      -1.835000e+00       8.000000e+02
+
+! Reaction 10
+H+OH(+M)=H2O(+M)                    2.500000e+13       2.340000e-01      -1.140000e+02
+    LOW  /   4.530000e+21      -1.810000e+00       4.920000e+02 /
+    TROE /   7.300000e-01       1.000000e-30       1.000000e+30       1.000000e+30 /
+    AR / 0.4 / H2 / 1.5 / H2O / 13.0 / HE / 0.57 / N2 / 1.0 / O2 / 0.0 / 
+
+! Reaction 11
+2O+M=O2+M                           6.165000e+15      -5.000000e-01       0.000000e+00
+    AR / 0.83 / CO / 1.9 / CO2 / 3.8 / H2 / 2.5 / H2O / 12.0 / HE / 0.83 / 
+
+! Reaction 12
+H+O2=O+OH                           1.040000e+14       0.000000e+00       1.528600e+04
+
+! Reaction 13
+2OH=H2O+O                           2.880000e+06       1.790000e+00      -1.750000e+03
+
+! Reaction 14
+H2O2(+M)=2OH(+M)                    2.000000e+12       9.000000e-01       4.874900e+04
+    LOW  /   2.353020e+24      -2.292900e+00       4.874340e+04 /
+    TROE /   4.300000e-01       1.000000e-30       1.000000e+30 /
+    CO / 2.4 / CO2 / 1.86 / H2 / 2.0 / H2O / 9.0 / H2O2 / 9.9 / HE / 0.88 / N2 / 1.5 / O2 / 1.5 / 
+
+! Reaction 15
+H+H2O2=H2O+OH                       2.410000e+13       0.000000e+00       3.970000e+03
+
+! Reaction 16
+H+H2O2=H2+HO2                       1.650000e+10       1.000000e+00       6.000000e+03
+
+! Reaction 17
+H2O2+O=HO2+OH                       9.550000e+06       2.000000e+00       3.970000e+03
+
+! Reaction 18
+H2O2+OH=H2O+HO2                     1.740000e+12       0.000000e+00       3.180000e+02
+DUPLICATE
+
+! Reaction 19
+H2O2+OH=H2O+HO2                     7.590000e+13       0.000000e+00       7.269000e+03
+DUPLICATE
+
+! Reaction 20
+H+HO2=H2+O2                         2.800000e+06       2.090000e+00      -1.451000e+03
+
+! Reaction 21
+H+HO2=2OH                           7.079000e+13       0.000000e+00       2.950000e+02
+
+! Reaction 22
+HO2+O=O2+OH                         3.250000e+13       0.000000e+00       0.000000e+00
+
+! Reaction 23
+HO2+OH=H2O+O2                       1.930000e+20      -2.490000e+00       5.842400e+02
+DUPLICATE
+
+! Reaction 24
+HO2+OH=H2O+O2                       1.210000e+09       1.240000e+00      -1.307580e+03
+DUPLICATE
+
+! Reaction 25
+2HO2=H2O2+O2                        1.930000e-02       4.120000e+00      -4.960000e+03
+
+! Reaction 26
+2HO2=O2+2OH                         6.410000e+17      -1.540000e+00       8.540000e+03
+
+! Reaction 27
+H+O2(+M)=HO2(+M)                    4.660000e+12       4.400000e-01       0.000000e+00
+    LOW  /   4.066200e+19      -1.400000e+00      -1.805370e+02 /
+    TROE /   5.000000e-01       1.000000e+00       1.000000e+10       1.000000e+30 /
+    AR / 0.0 / CO / 4.0 / CO2 / 3.25 / H2 / 2.0 / H2O / 17.6 / HE / 0.0 / N2 / 0.0 / O2 / 1.0 / 
+
+! Reaction 28
+H+O2(+N2)=HO2(+N2)                  4.660000e+12       4.400000e-01       0.000000e+00
+    LOW  /   1.910000e+20      -1.556800e+00       2.538600e+02 /
+    TROE /   5.000000e-01       1.000000e+00       1.000000e+10       1.000000e+30 /
+
+! Reaction 29
+H+O2(+HE)=HO2(+HE)                  4.660000e+12       4.400000e-01       0.000000e+00
+    LOW  /   1.520000e+19      -1.230000e+00       0.000000e+00 /
+    TROE /   6.700000e-01       1.000000e-30       1.000000e+30       1.000000e+30 /
+
+! Reaction 30
+H+O2+AR=HO2+AR                      2.905840e+20      -1.663100e+00       1.493490e+03
+    PLOG /    1.000000e-02          6.937020e+18      -1.191200e+00       1.140780e+01 /
+    PLOG /    1.000000e-01          6.779140e+18      -1.189300e+00       2.350540e+01 /
+    PLOG /    1.000000e+00          6.885210e+18      -1.192500e+00       6.134370e+01 /
+    PLOG /    5.000000e+00          8.114740e+18      -1.214100e+00       1.484190e+02 /
+    PLOG /    1.000000e+01          9.852410e+18      -1.238900e+00       2.289930e+02 /
+    PLOG /    2.000000e+01          1.374510e+19      -1.280800e+00       3.589710e+02 /
+    PLOG /    3.000000e+01          2.668050e+20      -1.678800e+00       6.104860e+02 /
+    PLOG /    4.000000e+01          3.883850e+20      -1.725200e+00       7.462750e+02 /
+    PLOG /    5.000000e+01          5.116210e+20      -1.758900e+00       8.570890e+02 /
+    PLOG /    1.000000e+02          8.717010e+20      -1.819500e+00       1.191990e+03 /
+    PLOG /    3.000000e+02          2.905840e+20      -1.663100e+00       1.493490e+03 /
+
+! Reaction 31
+CO+O(+M)=CO2(+M)                    1.362000e+10       0.000000e+00       2.384000e+03
+    LOW  /   1.173000e+24      -2.790000e+00       4.191000e+03 /
+    AR / 0.7 / CO / 1.75 / CO2 / 3.6 / H2 / 2.0 / H2O / 12.0 / HE / 0.7 / 
+
+! Reaction 32
+CO+OH=CO2+H                         2.300000e+07       1.350000e+00       9.740000e+02
+    PLOG /    1.315000e-02          2.100000e+05       1.900000e+00      -1.064000e+03 /
+    PLOG /    1.315000e-01          2.500000e+05       1.880000e+00      -1.043000e+03 /
+    PLOG /    1.315000e+00          8.700000e+05       1.730000e+00      -6.850000e+02 /
+    PLOG /    1.315800e+01          6.800000e+06       1.480000e+00       4.800000e+01 /
+    PLOG /    1.315800e+02          2.300000e+07       1.350000e+00       9.740000e+02 /
+
+! Reaction 33
+CO+HO2=CO2+OH                       8.350000e+03       2.550000e+00       1.656000e+04
+
+! Reaction 34
+CO+O2=CO2+O                         1.119000e+12       0.000000e+00       4.770000e+04
+
+! Reaction 35
+HCO+M=CO+H+M                        4.750000e+11       6.600000e-01       1.487000e+04
+    CO / 1.5 / CO2 / 2.0 / H2 / 2.0 / H2O / 6.0 / HE / 0.5 / 
+
+! Reaction 36
+HCO+O2=CO+HO2                       1.200000e+10       8.070000e-01      -7.270000e+02
+
+! Reaction 37
+HCO+O=CO+OH                         3.020000e+13       0.000000e+00       0.000000e+00
+
+! Reaction 38
+H+HCO=CO+H2                         9.130000e+12       4.100000e-01      -2.155700e+02
+
+! Reaction 39
+HCO+OH=CO+H2O                       3.011000e+13       0.000000e+00       0.000000e+00
+
+! Reaction 40
+HCO+O=CO2+H                         3.000000e+13       0.000000e+00       0.000000e+00
+
+! Reaction 41
+HCO+HO2=>CO2+H+OH                   3.000000e+13       0.000000e+00       0.000000e+00
+
+! Reaction 42
+2HCO=>2CO+H2                        3.000000e+12       0.000000e+00       0.000000e+00
+
+END
+
