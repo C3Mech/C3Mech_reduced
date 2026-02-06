@@ -1,3 +1,82 @@
+! ================================================================================================== !
+!                                                                                                    !
+!            C3MechLiteV4.0.1: An integrated component library of compact kinetic mechanisms         !
+!                        for low-carbon, carbon neutral and zero-carbon fuels                        !
+!                                                                                                    !
+! ================================================================================================== !
+!                                                                                                    !
+! C3MechLiteV4.0.1 and C3MechCoreV4.0.1 have been generated based on C3MechV4.0.1 formulated         !
+! by the Computational Chemistry Consortium (C3), a collaborative research organization              !
+! including the University of Galway, Politecnico di Milano, RWTH Aachen University,                 !
+! Lawrence Livermore National Laboratory, Argonne National Laboratory and Convergent Science.        !
+!                                                                                                    !
+! < C3MechLiteV4.0.1 >                                                                               !
+! - 61 species and 519 reactions                                                                     !
+! - Intended to simulate natural gas combustion with NOx chemistry                                   !
+! - Targetting H2, CO, NH3, CH4, CH3OH, Natural gas (CH4 + C2H6/C3H8), and NOx                       !
+!                                                                                                    !
+! < C3MechCoreV4.0.1 >                                                                               !
+! - 118 species and 1006 reactions                                                                   !
+! - Covering a wider range of fuels up to C3                                                         !
+! - Targetting H2, CO, NH3, CH4, CH3OH, C2H6, DME, C2H5OH, C3H8, and NOx                             !
+!                                                                                                    !
+! C3MechLiteV4.0.1 and C3MechCoreV4.0.1 are available from the github repository:                    !
+! https://github.com/C3Mech/C3Mech_reduced                                                           !
+!                                                                                                    !
+! C3MechV4.0.1 is available from the github repository:                                              !
+! https://github.com/C3Mech/C3MechV4.0.1                                                             !
+!                                                                                                    !
+! For more information, please visit fuelmech.org.                                                   !
+!                                                                                                    !
+! How to cite C3MechLiteV4.0.1 and C3MechCoreV4.0.1                                                  !
+! 1) Murakami, Y., Wang, Q. D., Liu, S., Zhu, Y., Wang, P., Pratali Maffei, L., Langer, R.,          !
+!    Faravelli, T., Pitsch, H., Klippenstein, S. J., Bergthorson, J., Bourque, G., Wagnon, S. W.,    !
+!    Senecal, P. K., & Curran, H. J. (2025). C3MechLite: An integrated component library of compact  !
+!    kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels,                        ! 
+!    Combustion and Flame, 282, 114410. https://doi.org/10.1016/j.combustflame.2025.114410.          !
+! 2) Murakami, Y., Wang, Q. D., Liu, S., Zhu, Y., Wang, P., Pratali Maffei, L., Langer, R.,          !
+!    Faravelli, T., Pitsch, H., Klippenstein, S. J., Bergthorson, J., Bourque, G., Wagnon, S. W.,    !
+!    Senecal, P. K., & Curran, H. J. (2026). Corrigendum to "C3MechLite: An integrated component     !
+!    library of compact kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels"     ! 
+!    [Combustion and Flame, 282, 114410.]                                                            !
+!                                                                                                    !
+! ================== Working Groups For C3MechLiteV4.0.1/C3MechCoreV4.0.1 ========================== !
+!                                                                                                    !
+! Author                  | Institution                                                              !
+! -------------------------------------------------------------------------------------------------- !
+! Yuki Murakami           | Combustion Chemistry Centre, School of Chemistry, Ryan Institute, MaREI, !
+!                         | University of Galway, Ireland                                            !
+! Quan-De Wang            | Carbon Neutrality Institute and School of Chemical Engineering,          !
+!                         | China University of Mining and Technology, China                         !
+! Shuaishuai Liu          | Convergent Science, United States of America                             !
+!                         |                                                                          !
+! Yuxiang Zhu             | Combustion Chemistry Centre, School of Chemistry, Ryan Institute, MaREI, !
+!                         | University of Galway, Ireland                                            !
+! Pengzhi Wang            | Combustion Chemistry Centre, School of Chemistry, Ryan Institute, MaREI, !
+!                         | University of Galway, Ireland                                            !
+! Luna Pratali Maffei     | Dipartimento di Chimica, Materiali ed Ingegneria Chimica "G. Natta",     !
+!                         | Politecnico di Milano, Italy                                             !
+! Raymond Langer          | Institute for Combustion Technology,                                     !
+!                         | RWTH Aachen University, Germany                                          !
+! Tiziano Faravelli       | Dipartimento di Chimica, Materiali ed Ingegneria Chimica "G. Natta",     !
+!                         | Politecnico di Milano, Italy                                             !
+! Heinz Pitsch            | Institute for Combustion Technology,                                     !
+!                         | RWTH Aachen University, Germany                                          !
+! Stephen J. Klippenstein | Chemical Sciences and Engineering Division,                              !
+!                         | Argonne National Laboratory, United States of America                    !
+! Jeff Bergthorson        | Alternative Fuels Laboratory, Department of Mechanical Engineering,      !
+!                         | McGill University, Canada                                                !
+! Gilles Bourque          | Alternative Fuels Laboratory, Department of Mechanical Engineering,      !
+!                         | McGill University, Canada                                                !
+! Scott W. Wagnon         | Lawrence Livermore National Laboratory, United States of America         !
+!                         |                                                                          !
+! Peter Kelly Senecal     | Convergent Science, United States of America                             !
+!                         |                                                                          !
+! Henry J. Curran         | Combustion Chemistry Centre, School of Chemistry, Ryan Institute, MaREI, !
+!                         | University of Galway, Ireland                                            !
+! ================================================================================================== !
+!                              !!! Please do not remove this header !!!                              !
+! ================================================================================================== !
 ! Thermodynamic data for C3MechLiteV4.0.1_H2-NH3_25sp
 THERMO ALL
 300.   1000.   5000.
