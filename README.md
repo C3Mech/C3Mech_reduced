@@ -19,5 +19,6 @@
 | H2-NG_45sp                 |         45 |          335 | NG, H2-NG                             |
 | H2-CO-NH3-CH4-NOx_53sp     |         53 |          445 | H2-CO-NH3-CH4-NOx                     |
 
-Note that all the numbers of species and reactions are based on Cantera format mechanisms.
-
+Note that all numbers of species and reactions are based on Cantera-format mechanisms (reference values).
+CHEMKIN-Pro mechanisms may show slightly lower reaction counts because LOWMX/TROEMX and LOWSP/TROESP
+encode species-specific falloff behavior inside grouped reactions.
