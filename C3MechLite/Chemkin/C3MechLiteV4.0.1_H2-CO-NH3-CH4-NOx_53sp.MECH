@@ -46,7 +46,7 @@
 ! - Targeting H2, CO, NH3, CH4, CH3OH, C2H6, DME, C2H5OH, C3H8, and NOx                              !
 !                                                                                                    !
 ! Reaction counts listed above refer to the Cantera-compatible mechanism files (reference values).   !
-! CHEMKIN-Pro files may show slightly different reaction counts because LOWMX/TROEMX and             !
+! CHEMKIN-Pro files show different reaction counts because LOWMX/TROEMX and                          !
 ! LOWSP/TROESP keywords encode species-specific falloff behavior within grouped reactions.           !
 !                                                                                                    !
 ! C3MechV4.0.1 is available from the GitHub repository:                                              !
