@@ -13,12 +13,12 @@
 ! < C3MechLiteV4.0.1 >                                                                               !
 ! - 61 species and 519 reactions                                                                     !
 ! - Intended to simulate natural gas combustion with NOx chemistry                                   !
-! - Targetting H2, CO, NH3, CH4, CH3OH, Natural gas (CH4 + C2H6/C3H8), and NOx                       !
+! - Targeting H2, CO, NH3, CH4, CH3OH, Natural gas (CH4 + C2H6/C3H8), and NOx                        !
 !                                                                                                    !
 ! < C3MechCoreV4.0.1 >                                                                               !
 ! - 118 species and 1006 reactions                                                                   !
 ! - Covering a wider range of fuels up to C3                                                         !
-! - Targetting H2, CO, NH3, CH4, CH3OH, C2H6, DME, C2H5OH, C3H8, and NOx                             !
+! - Targeting H2, CO, NH3, CH4, CH3OH, C2H6, DME, C2H5OH, C3H8, and NOx                              !
 !                                                                                                    !
 ! C3MechLiteV4.0.1 and C3MechCoreV4.0.1 are available from the github repository:                    !
 ! https://github.com/C3Mech/C3Mech_reduced                                                           !
