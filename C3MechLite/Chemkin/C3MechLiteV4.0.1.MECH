@@ -1,4 +1,29 @@
 ! ================================================================================================== !
+!                                   !!! IMPORTANT NOTICE !!!                                         !
+! ================================================================================================== !
+!                                                                                                    !
+! A corrigendum is forthcoming for the original article:                                             !
+! "C3MechLite: An integrated component library of compact kinetic mechanisms for low-carbon,         !
+!  carbon neutral and zero-carbon fuels" [Combustion and Flame 282 (2025) 114410].                   !
+!                                                                                                    !
+! Please USE the updated mechanism files (C3MechLiteV4.0.1/C3MechCoreV4.0.1)                         !
+! available on GitHub repository (https://github.com/C3Mech/C3Mech_reduced).                         !
+!                                                                                                    !
+! For more information, please visit fuelmech.org.                                                   !
+!                                                                                                    !
+! How to cite C3MechLiteV4.0.1 and C3MechCoreV4.0.1                                                  !
+! 1) Murakami, Y., Wang, Q. D., Liu, S., Zhu, Y., Wang, P., Pratali Maffei, L., Langer, R.,          !
+!    Faravelli, T., Pitsch, H., Klippenstein, S. J., Bergthorson, J., Bourque, G., Wagnon, S. W.,    !
+!    Senecal, P. K., & Curran, H. J. (2025). C3MechLite: An integrated component library of compact  !
+!    kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels,                        !
+!    Combustion and Flame, 282, 114410. https://doi.org/10.1016/j.combustflame.2025.114410.          !
+! 2) Murakami, Y., Wang, Q. D., Liu, S., Zhu, Y., Wang, P., Pratali Maffei, L., Langer, R.,          !
+!    Faravelli, T., Pitsch, H., Klippenstein, S. J., Bergthorson, J., Bourque, G., Wagnon, S. W.,    !
+!    Senecal, P. K., & Curran, H. J. (2026). Corrigendum to "C3MechLite: An integrated component     !
+!    library of compact kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels",    !
+!    Combustion and Flame, xxx, yyyyyy.                                                              !
+!                                                                                                    !
+! ================================================================================================== !
 !                                                                                                    !
 !            C3MechLiteV4.0.1: An integrated component library of compact kinetic mechanisms         !
 !                        for low-carbon, carbon neutral and zero-carbon fuels                        !
@@ -20,25 +45,14 @@
 ! - Covering a wider range of fuels up to C3                                                         !
 ! - Targeting H2, CO, NH3, CH4, CH3OH, C2H6, DME, C2H5OH, C3H8, and NOx                              !
 !                                                                                                    !
-! C3MechLiteV4.0.1 and C3MechCoreV4.0.1 are available from the github repository:                    !
-! https://github.com/C3Mech/C3Mech_reduced                                                           !
+! Reaction counts listed above refer to the Cantera-compatible mechanism files (reference values).   !
+! CHEMKIN-Pro files may show slightly different reaction counts because LOWMX/TROEMX and             !
+! LOWSP/TROESP keywords encode species-specific falloff behavior within grouped reactions.           !
 !                                                                                                    !
-! C3MechV4.0.1 is available from the github repository:                                              !
-! https://github.com/C3Mech/C3MechV4.0.1                                                             !
+! C3MechV4.0.1 is available from the GitHub repository:                                              !
+! https://github.com/C3Mech/C3Mech                                                                   !
 !                                                                                                    !
 ! For more information, please visit fuelmech.org.                                                   !
-!                                                                                                    !
-! How to cite C3MechLiteV4.0.1 and C3MechCoreV4.0.1                                                  !
-! 1) Murakami, Y., Wang, Q. D., Liu, S., Zhu, Y., Wang, P., Pratali Maffei, L., Langer, R.,          !
-!    Faravelli, T., Pitsch, H., Klippenstein, S. J., Bergthorson, J., Bourque, G., Wagnon, S. W.,    !
-!    Senecal, P. K., & Curran, H. J. (2025). C3MechLite: An integrated component library of compact  !
-!    kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels,                        ! 
-!    Combustion and Flame, 282, 114410. https://doi.org/10.1016/j.combustflame.2025.114410.          !
-! 2) Murakami, Y., Wang, Q. D., Liu, S., Zhu, Y., Wang, P., Pratali Maffei, L., Langer, R.,          !
-!    Faravelli, T., Pitsch, H., Klippenstein, S. J., Bergthorson, J., Bourque, G., Wagnon, S. W.,    !
-!    Senecal, P. K., & Curran, H. J. (2026). Corrigendum to "C3MechLite: An integrated component     !
-!    library of compact kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels"     ! 
-!    [Combustion and Flame, 282, 114410.]                                                            !
 !                                                                                                    !
 ! ================== Working Groups For C3MechLiteV4.0.1/C3MechCoreV4.0.1 ========================== !
 !                                                                                                    !
@@ -74,6 +88,7 @@
 !                         |                                                                          !
 ! Henry J. Curran         | Combustion Chemistry Centre, School of Chemistry, Ryan Institute, MaREI, !
 !                         | University of Galway, Ireland                                            !
+!                                                                                                    !
 ! ================================================================================================== !
 !                              !!! Please do not remove this header !!!                              !
 ! ================================================================================================== !
@@ -2341,4 +2356,3 @@ HNO+NC3H7=C3H8+NO                   1.500000e+11       7.600000e-01       3.4800
 HNO+IC3H7=C3H8+NO                   1.500000e+11       7.600000e-01       3.480000e+02
 
 END
-
