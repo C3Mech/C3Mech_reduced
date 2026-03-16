@@ -1,7 +1,7 @@
 # Latest release (V4.0.1)
 **C3MechLiteV4.0.1 and C3MechCoreV4.0.1** are available.
 
-**C3MechLiteV4.0.1 and C3MechCoreV4.0.1** are two reduced reaction mechanisms targeting C0–C3 chemical species, including NH3. This repository is linked to the publication ["C3MechLite: An integrated component library of compact kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels"](https://doi.org/10.1016/j.combustflame.2025.114410) and its ["forthcoming Corrigendum"](link-to-be-added-upon-publication).
+**C3MechLiteV4.0.1 and C3MechCoreV4.0.1** are two reduced reaction mechanisms targeting C0–C3 chemical species, including NH3. This repository is linked to the publication ["C3MechLite: An integrated component library of compact kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels"](https://doi.org/10.1016/j.combustflame.2025.114410) and its ["Corrigendum"](https://doi.org/10.1016/j.combustflame.2026.114912).
 
 ## Number of species and reactions contained in each mechanism
 
@@ -20,5 +20,5 @@
 | H2-CO-NH3-CH4-NOx_53sp     |         53 |          445 | H2-CO-NH3-CH4-NOx                     |
 
 Note that all numbers of species and reactions are based on Cantera-format mechanisms (reference values).
-CHEMKIN-Pro mechanisms may show slightly lower reaction counts because LOWMX/TROEMX and LOWSP/TROESP
+CHEMKIN-Pro mechanisms show different reaction counts because LOWMX/TROEMX and LOWSP/TROESP
 encode species-specific falloff behavior inside grouped reactions.
