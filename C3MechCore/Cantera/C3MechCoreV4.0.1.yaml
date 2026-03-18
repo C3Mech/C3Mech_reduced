@@ -6354,11 +6354,11 @@ reactions:
   note: Reaction 773
 - equation: N + NO <=> N2 + O  # Reaction 774
   duplicate: true
-  rate-constant: {A: 7.03e+13, b: -0.051, Ea: 243.4}
+  rate-constant: {A: 7.46141e+13, b: -0.05711, Ea: 2280.836}
   note: Reaction 774
 - equation: N + NO <=> N2 + O  # Reaction 775
   duplicate: true
-  rate-constant: {A: -6.55e+16, b: -1.044, Ea: 1491.0}
+  rate-constant: {A: 3.22982e+18, b: -1.88075, Ea: 756.8997}
   negative-A: true
   note: Reaction 775
 - equation: 2 NH2 (+M) <=> N2H4 (+M)  # Reaction 776

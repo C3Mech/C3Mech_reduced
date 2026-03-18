@@ -813,11 +813,11 @@ reactions:
   note: Reaction 81
 - equation: N + NO <=> N2 + O  # Reaction 82
   duplicate: true
-  rate-constant: {A: 7.03e+13, b: -0.0505, Ea: 243.378}
+  rate-constant: {A: 7.46141e+13, b: -0.05711, Ea: 2280.836}
   note: Reaction 82
 - equation: N + NO <=> N2 + O  # Reaction 83
   duplicate: true
-  rate-constant: {A: -6.55e+16, b: -1.0436, Ea: 1491.01}
+  rate-constant: {A: 3.22982e+18, b: -1.88075, Ea: 756.8997}
   negative-A: true
   note: Reaction 83
 - equation: 2 NH2 (+M) <=> N2H4 (+M)  # Reaction 84
