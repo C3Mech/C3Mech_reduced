@@ -97,13 +97,108 @@ description: |-
 
   C3MechLiteV4.0.1_H2-CO-NH3_29sp
 
+  ================================================================================================== !
+                                    !!! IMPORTANT NOTICE !!!                                         !
+  ================================================================================================== !
+                                                                                                     !
+  A corrigendum for the original article has been published:                                         !
+  "C3MechLite: An integrated component library of compact kinetic mechanisms for low-carbon,         !
+   carbon neutral and zero-carbon fuels" [Combustion and Flame 282 (2025) 114410].                   !
+                                                                                                     !
+  Please USE the updated mechanism files (C3MechLiteV4.0.1/C3MechCoreV4.0.1)                         !
+  available on GitHub repository (https://github.com/C3Mech/C3Mech_reduced).                         !
+                                                                                                     !
+  For more information, please visit fuelmech.org.                                                   !
+                                                                                                     !
+  How to cite C3MechLiteV4.0.1 and C3MechCoreV4.0.1                                                  !
+  1) Murakami, Y., Wang, Q. D., Liu, S., Zhu, Y., Wang, P., Pratali Maffei, L., Langer, R.,          !
+     Faravelli, T., Pitsch, H., Klippenstein, S. J., Bergthorson, J., Bourque, G., Wagnon, S. W.,    !
+     Senecal, P. K., & Curran, H. J. (2025). C3MechLite: An integrated component library of compact  !
+     kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels,                        !
+     Combustion and Flame, 282, 114410. https://doi.org/10.1016/j.combustflame.2025.114410.          !
+  2) Murakami, Y., Wang, Q. D., Liu, S., Zhu, Y., Wang, P., Pratali Maffei, L., Langer, R.,          !
+     Faravelli, T., Pitsch, H., Klippenstein, S. J., Bergthorson, J., Bourque, G., Wagnon, S. W.,    !
+     Senecal, P. K., & Curran, H. J. (2026). Corrigendum to "C3MechLite: An integrated component     !
+     library of compact kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels"     !
+     [Combustion and Flame 282 (2025) 114410], Combustion and Flame, 114912.                         !
+     https://doi.org/10.1016/j.combustflame.2026.114912.                                             !
+                                                                                                     !
+  ================================================================================================== !
+                                                                                                     !
+              C3MechLite: An integrated component library of compact kinetic mechanisms              !
+                         for low-carbon, carbon neutral and zero-carbon fuels                        !
+                                                                                                     !
+  ================================================================================================== !
+                                                                                                     !
+  C3MechLiteV4.0.1 and C3MechCoreV4.0.1 have been generated based on C3MechV4.0.1 formulated         !
+  by the Computational Chemistry Consortium (C3), a collaborative research organization              !
+  including the University of Galway, Politecnico di Milano, RWTH Aachen University,                 !
+  Lawrence Livermore National Laboratory, Argonne National Laboratory and Convergent Science.        !
+                                                                                                     !
+  < C3MechLiteV4.0.1 >                                                                               !
+  - 61 species and 519 reactions                                                                     !
+  - Intended to simulate natural gas combustion with NOx chemistry                                   !
+  - Targeting H2, CO, NH3, CH4, CH3OH, Natural gas (CH4 + C2H6/C3H8), and NOx                        !
+                                                                                                     !
+  < C3MechCoreV4.0.1 >                                                                               !
+  - 118 species and 1006 reactions                                                                   !
+  - Covering a wider range of fuels up to C3                                                         !
+  - Targeting H2, CO, NH3, CH4, CH3OH, C2H6, DME, C2H5OH, C3H8, and NOx                              !
+                                                                                                     !
+  Reaction counts listed above refer to the Cantera-compatible mechanism files (reference values).   !
+  CHEMKIN-Pro files show different reaction counts because LOWMX/TROEMX and                          !
+  LOWSP/TROESP keywords encode species-specific falloff behavior within grouped reactions.           !
+                                                                                                     !
+  C3MechV4.0.1 is available from the GitHub repository:                                              !
+  https://github.com/C3Mech/C3Mech                                                                   !
+                                                                                                     !
+  For more information, please visit fuelmech.org.                                                   !
+                                                                                                     !
+  ================== Working Groups For C3MechLiteV4.0.1/C3MechCoreV4.0.1 ========================== !
+                                                                                                     !
+  Author                  | Institution                                                              !
+  -------------------------------------------------------------------------------------------------- !
+  Yuki Murakami           | Combustion Chemistry Centre, School of Chemistry, Ryan Institute, MaREI, !
+                          | University of Galway, Ireland                                            !
+  Quan-De Wang            | Carbon Neutrality Institute and School of Chemical Engineering,          !
+                          | China University of Mining and Technology, China                         !
+  Shuaishuai Liu          | Convergent Science, United States of America                             !
+                          |                                                                          !
+  Yuxiang Zhu             | Combustion Chemistry Centre, School of Chemistry, Ryan Institute, MaREI, !
+                          | University of Galway, Ireland                                            !
+  Pengzhi Wang            | Combustion Chemistry Centre, School of Chemistry, Ryan Institute, MaREI, !
+                          | University of Galway, Ireland                                            !
+  Luna Pratali Maffei     | Dipartimento di Chimica, Materiali ed Ingegneria Chimica "G. Natta",     !
+                          | Politecnico di Milano, Italy                                             !
+  Raymond Langer          | Institute for Combustion Technology,                                     !
+                          | RWTH Aachen University, Germany                                          !
+  Tiziano Faravelli       | Dipartimento di Chimica, Materiali ed Ingegneria Chimica "G. Natta",     !
+                          | Politecnico di Milano, Italy                                             !
+  Heinz Pitsch            | Institute for Combustion Technology,                                     !
+                          | RWTH Aachen University, Germany                                          !
+  Stephen J. Klippenstein | Chemical Sciences and Engineering Division,                              !
+                          | Argonne National Laboratory, United States of America                    !
+  Jeff Bergthorson        | Alternative Fuels Laboratory, Department of Mechanical Engineering,      !
+                          | McGill University, Canada                                                !
+  Gilles Bourque          | Alternative Fuels Laboratory, Department of Mechanical Engineering,      !
+                          | McGill University, Canada                                                !
+  Scott W. Wagnon         | Lawrence Livermore National Laboratory, United States of America         !
+                          |                                                                          !
+  Peter Kelly Senecal     | Convergent Science, United States of America                             !
+                          |                                                                          !
+  Henry J. Curran         | Combustion Chemistry Centre, School of Chemistry, Ryan Institute, MaREI, !
+                          | University of Galway, Ireland                                            !
+                                                                                                     !
+  ================================================================================================== !
+                               !!! Please do not remove this header !!!                              !
+  ================================================================================================== !
   Thermodynamic data for C3MechLiteV4.0.1_H2-CO-NH3_29sp
 
 generator: ck2yaml
 input-files: [C3MechLiteV4.0.1_H2-CO-NH3_29sp.MECH, C3MechLiteV4.0.1_H2-CO-NH3_29sp.THERM,
   C3MechLiteV4.0.1_H2-CO-NH3_29sp.TRAN]
 cantera-version: 3.0.0
-date: Wed, 14 Jan 2026 17:04:28 +0100
+date: Thu, 19 Mar 2026 23:26:42 +0100
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -583,12 +678,12 @@ species:
     rotational-relaxation: 2.0
 
 reactions:
-- equation: H2 + M <=> 2 H + M  # Reaction 1
+- equation: H2 + M <=> H + H + M  # Reaction 1
   type: three-body
   rate-constant: {A: 4.577e+19, b: -1.4, Ea: 1.044e+05}
-  efficiencies: {CO: 1.9, CO2: 3.8, H2: 2.5, H2O: 12.0, HE: 0.83, O2: 0.0}
+  efficiencies: {HE: 0.83, CO: 1.9, H2: 2.5, CO2: 3.8, H2O: 12.0, O2: 0.0}
   note: Reaction 1
-- equation: 2 H + O2 <=> H2 + O2  # Reaction 2
+- equation: H + O2 + H <=> H2 + O2  # Reaction 2
   rate-constant: {A: 8.8e+22, b: -1.835, Ea: 800.0}
   note: Reaction 2
 - equation: H2 + O <=> H + OH  # Reaction 3
@@ -602,19 +697,19 @@ reactions:
 - equation: H2 + OH <=> H + H2O  # Reaction 5
   rate-constant: {A: 2.2e+08, b: 1.51, Ea: 3430.0}
   note: Reaction 5
-- equation: 2 H + O2 <=> 2 OH  # Reaction 6
+- equation: H + O2 + H <=> OH + OH  # Reaction 6
   rate-constant: {A: 4.0e+22, b: -1.835, Ea: 800.0}
   note: Reaction 6
-- equation: H + O + O2 <=> OH + O2  # Reaction 7
+- equation: H + O2 + O <=> OH + O2  # Reaction 7
   rate-constant: {A: 7.35e+22, b: -1.835, Ea: 800.0}
   note: Reaction 7
-- equation: H + O + M <=> OH + M  # Reaction 8
+- equation: O + H + M <=> OH + M  # Reaction 8
   type: three-body
   rate-constant: {A: 4.714e+18, b: -1.0, Ea: 0.0}
-  efficiencies: {AR: 0.75, CO: 1.5, CO2: 2.0, H2: 2.5, H2O: 12.0, HE: 0.75,
-    O2: 0.0}
+  efficiencies: {AR: 0.75, O2: 0.0, HE: 0.75, CO: 1.5, CO2: 2.0, H2: 2.5,
+    H2O: 12.0}
   note: Reaction 8
-- equation: H + OH + O2 <=> H2O + O2  # Reaction 9
+- equation: H + O2 + OH <=> H2O + O2  # Reaction 9
   rate-constant: {A: 2.56e+22, b: -1.835, Ea: 800.0}
   note: Reaction 9
 - equation: H + OH (+M) <=> H2O (+M)  # Reaction 10
@@ -622,34 +717,34 @@ reactions:
   low-P-rate-constant: {A: 4.53e+21, b: -1.81, Ea: 492.0}
   high-P-rate-constant: {A: 2.5e+13, b: 0.234, Ea: -114.0}
   Troe: {A: 0.73, T3: 1.0e-30, T1: 1.0e+30, T2: 1.0e+30}
-  efficiencies: {AR: 0.4, H2: 1.5, H2O: 13.0, HE: 0.57, N2: 1.0, O2: 0.0}
+  efficiencies: {AR: 0.4, HE: 0.57, O2: 0.0, N2: 1.0, H2: 1.5, H2O: 13.0}
   note: Reaction 10
-- equation: 2 O + M <=> O2 + M  # Reaction 11
+- equation: O + O + M <=> O2 + M  # Reaction 11
   type: three-body
   rate-constant: {A: 6.165e+15, b: -0.5, Ea: 0.0}
-  efficiencies: {AR: 0.83, CO: 1.9, CO2: 3.8, H2: 2.5, H2O: 12.0, HE: 0.83}
+  efficiencies: {HE: 0.83, AR: 0.83, CO: 1.9, H2: 2.5, CO2: 3.8, H2O: 12.0}
   note: Reaction 11
-- equation: H + O2 <=> O + OH  # Reaction 12
+- equation: O2 + H <=> O + OH  # Reaction 12
   rate-constant: {A: 1.04e+14, b: 0.0, Ea: 1.5286e+04}
   note: Reaction 12
-- equation: 2 OH <=> H2O + O  # Reaction 13
+- equation: OH + OH <=> H2O + O  # Reaction 13
   rate-constant: {A: 2.88e+06, b: 1.79, Ea: -1750.0}
   note: Reaction 13
-- equation: H2O2 (+M) <=> 2 OH (+M)  # Reaction 14
+- equation: H2O2 (+M) <=> OH + OH (+M)  # Reaction 14
   type: falloff
-  low-P-rate-constant: {A: 2.35302e+24, b: -2.2929, Ea: 4.87434e+04}
+  low-P-rate-constant: {A: 2.353018e+24, b: -2.292936, Ea: 4.87434e+04}
   high-P-rate-constant: {A: 2.0e+12, b: 0.9, Ea: 4.8749e+04}
   Troe: {A: 0.43, T3: 1.0e-30, T1: 1.0e+30}
-  efficiencies: {CO: 2.4, CO2: 1.86, H2: 2.0, H2O: 9.0, H2O2: 9.9, HE: 0.88,
-    N2: 1.5, O2: 1.5}
+  efficiencies: {HE: 0.88, O2: 1.5, CO2: 1.86, N2: 1.5, CO: 2.4, H2: 2.0,
+    H2O: 9.0, H2O2: 9.9}
   note: Reaction 14
-- equation: H + H2O2 <=> H2O + OH  # Reaction 15
+- equation: H2O2 + H <=> H2O + OH  # Reaction 15
   rate-constant: {A: 2.41e+13, b: 0.0, Ea: 3970.0}
   note: Reaction 15
-- equation: H + H2O2 <=> H2 + HO2  # Reaction 16
+- equation: H2O2 + H <=> HO2 + H2  # Reaction 16
   rate-constant: {A: 1.65e+10, b: 1.0, Ea: 6000.0}
   note: Reaction 16
-- equation: H2O2 + O <=> HO2 + OH  # Reaction 17
+- equation: H2O2 + O <=> OH + HO2  # Reaction 17
   rate-constant: {A: 9.55e+06, b: 2.0, Ea: 3970.0}
   note: Reaction 17
 - equation: H2O2 + OH <=> H2O + HO2  # Reaction 18
@@ -660,27 +755,27 @@ reactions:
   duplicate: true
   rate-constant: {A: 7.59e+13, b: 0.0, Ea: 7269.0}
   note: Reaction 19
-- equation: H + HO2 <=> H2 + O2  # Reaction 20
+- equation: HO2 + H <=> H2 + O2  # Reaction 20
   rate-constant: {A: 2.8e+06, b: 2.09, Ea: -1451.0}
   note: Reaction 20
-- equation: H + HO2 <=> 2 OH  # Reaction 21
+- equation: HO2 + H <=> OH + OH  # Reaction 21
   rate-constant: {A: 7.079e+13, b: 0.0, Ea: 295.0}
   note: Reaction 21
-- equation: HO2 + O <=> O2 + OH  # Reaction 22
+- equation: HO2 + O <=> OH + O2  # Reaction 22
   rate-constant: {A: 3.25e+13, b: 0.0, Ea: 0.0}
   note: Reaction 22
-- equation: HO2 + OH <=> H2O + O2  # Reaction 23
+- equation: OH + HO2 <=> H2O + O2  # Reaction 23
   duplicate: true
   rate-constant: {A: 1.93e+20, b: -2.49, Ea: 584.24}
   note: Reaction 23
-- equation: HO2 + OH <=> H2O + O2  # Reaction 24
+- equation: OH + HO2 <=> H2O + O2  # Reaction 24
   duplicate: true
   rate-constant: {A: 1.21e+09, b: 1.24, Ea: -1307.58}
   note: Reaction 24
-- equation: 2 HO2 <=> H2O2 + O2  # Reaction 25
+- equation: HO2 + HO2 <=> H2O2 + O2  # Reaction 25
   rate-constant: {A: 0.0193, b: 4.12, Ea: -4960.0}
   note: Reaction 25
-- equation: 2 HO2 <=> O2 + 2 OH  # Reaction 26
+- equation: HO2 + HO2 <=> OH + OH + O2  # Reaction 26
   rate-constant: {A: 6.41e+17, b: -1.54, Ea: 8540.0}
   note: Reaction 26
 - equation: H + O2 (+M) <=> HO2 (+M)  # Reaction 27
@@ -688,8 +783,8 @@ reactions:
   low-P-rate-constant: {A: 4.0662e+19, b: -1.4, Ea: -180.537}
   high-P-rate-constant: {A: 4.66e+12, b: 0.44, Ea: 0.0}
   Troe: {A: 0.5, T3: 1.0, T1: 1.0e+10, T2: 1.0e+30}
-  efficiencies: {AR: 0.0, CO: 4.0, CO2: 3.25, H2: 2.0, H2O: 17.6, HE: 0.0,
-    N2: 0.0, O2: 1.0}
+  efficiencies: {HE: 0.0, AR: 0.0, N2: 0.0, O2: 1.0, H2: 2.0, CO2: 3.25,
+    H2O: 17.6, CO: 4.0}
   note: Reaction 27
 - equation: H + O2 (+N2) <=> HO2 (+N2)  # Reaction 28
   type: falloff
@@ -710,19 +805,19 @@ reactions:
   - {P: 0.1 atm, A: 6.77914e+18, b: -1.1893, Ea: 23.5054}
   - {P: 1.0 atm, A: 6.88521e+18, b: -1.1925, Ea: 61.3437}
   - {P: 5.0 atm, A: 8.11474e+18, b: -1.2141, Ea: 148.419}
-  - {P: 10.0 atm, A: 9.85241e+18, b: -1.2389, Ea: 228.993}
-  - {P: 20.0 atm, A: 1.37451e+19, b: -1.2808, Ea: 358.971}
-  - {P: 30.0 atm, A: 2.66805e+20, b: -1.6788, Ea: 610.486}
-  - {P: 40.0 atm, A: 3.88385e+20, b: -1.7252, Ea: 746.275}
+  - {P: 10.0 atm, A: 9.85241e+18, b: -1.2389, Ea: 228.9929}
+  - {P: 20.0 atm, A: 1.37451e+19, b: -1.2808, Ea: 358.9709}
+  - {P: 30.0 atm, A: 2.66805e+20, b: -1.6788, Ea: 610.4862}
+  - {P: 40.0 atm, A: 3.88385e+20, b: -1.7252, Ea: 746.2754}
   - {P: 50.0 atm, A: 5.11621e+20, b: -1.7589, Ea: 857.089}
-  - {P: 100.0 atm, A: 8.71701e+20, b: -1.8195, Ea: 1191.99}
-  - {P: 300.0 atm, A: 2.90584e+20, b: -1.6631, Ea: 1493.49}
+  - {P: 100.0 atm, A: 8.71701e+20, b: -1.8195, Ea: 1191.988}
+  - {P: 300.0 atm, A: 2.90584e+20, b: -1.6631, Ea: 1493.491}
   note: Reaction 30
 - equation: CO + O (+M) <=> CO2 (+M)  # Reaction 31
   type: falloff
   low-P-rate-constant: {A: 1.173e+24, b: -2.79, Ea: 4191.0}
   high-P-rate-constant: {A: 1.362e+10, b: 0.0, Ea: 2384.0}
-  efficiencies: {AR: 0.7, CO: 1.75, CO2: 3.6, H2: 2.0, H2O: 12.0, HE: 0.7}
+  efficiencies: {HE: 0.7, AR: 0.7, CO: 1.75, H2: 2.0, CO2: 3.6, H2O: 12.0}
   note: Reaction 31
 - equation: CO + OH <=> CO2 + H  # Reaction 32
   type: pressure-dependent-Arrhenius
@@ -739,7 +834,7 @@ reactions:
 - equation: CO + O2 <=> CO2 + O  # Reaction 34
   rate-constant: {A: 1.119e+12, b: 0.0, Ea: 4.77e+04}
   note: Reaction 34
-- equation: H + HCO (+M) <=> CH2O (+M)  # Reaction 35
+- equation: HCO + H (+M) <=> CH2O (+M)  # Reaction 35
   type: falloff
   low-P-rate-constant: {A: 1.35e+24, b: -2.57, Ea: 1425.0}
   high-P-rate-constant: {A: 1.09e+12, b: 0.48, Ea: -260.0}
@@ -757,25 +852,25 @@ reactions:
 - equation: CH2O + O <=> HCO + OH  # Reaction 38
   rate-constant: {A: 6.26e+09, b: 1.15, Ea: 2260.0}
   note: Reaction 38
-- equation: CH2O + H <=> H2 + HCO  # Reaction 39
-  rate-constant: {A: 1.06912e+05, b: 2.7309, Ea: 1887.14}
+- equation: CH2O + H <=> HCO + H2  # Reaction 39
+  rate-constant: {A: 1.069115e+05, b: 2.73093, Ea: 1887.14}
   note: Reaction 39
-- equation: CH2O + OH <=> H2O + HCO  # Reaction 40
+- equation: CH2O + OH <=> HCO + H2O  # Reaction 40
   rate-constant: {A: 2.185e+09, b: 1.1782, Ea: -576.02}
   note: Reaction 40
-- equation: CH2O + HO2 <=> H2O2 + HCO  # Reaction 41
+- equation: CH2O + HO2 <=> HCO + H2O2  # Reaction 41
   rate-constant: {A: 7.1e-03, b: 4.517, Ea: 6580.0}
   note: Reaction 41
-- equation: CH2O + OH => CO + H + H2O  # Reaction 42
-  rate-constant: {A: 2.565e+11, b: 0.693, Ea: 9368.7}
+- equation: CH2O + OH => H + CO + H2O  # Reaction 42
+  rate-constant: {A: 2.565e+11, b: 0.69304, Ea: 9368.7}
   note: Reaction 42
-- equation: CH2O + H => CO + H2 + H  # Reaction 43
-  rate-constant: {A: 1.94e+07, b: 2.192, Ea: 1.17403e+04}
+- equation: CH2O + H => H + CO + H2  # Reaction 43
+  rate-constant: {A: 1.94e+07, b: 2.192, Ea: 1.174029e+04}
   note: Reaction 43
-- equation: HCO + M <=> CO + H + M  # Reaction 44
+- equation: HCO + M <=> H + CO + M  # Reaction 44
   type: three-body
   rate-constant: {A: 4.75e+11, b: 0.66, Ea: 1.487e+04}
-  efficiencies: {CO: 1.5, CO2: 2.0, H2: 2.0, H2O: 6.0, HE: 0.5}
+  efficiencies: {HE: 0.5, CO: 1.5, H2: 2.0, CO2: 2.0, H2O: 6.0}
   note: Reaction 44
 - equation: HCO + O2 <=> CO + HO2  # Reaction 45
   rate-constant: {A: 1.2e+10, b: 0.807, Ea: -727.0}
@@ -783,13 +878,13 @@ reactions:
 - equation: HCO + O <=> CO + OH  # Reaction 46
   rate-constant: {A: 3.02e+13, b: 0.0, Ea: 0.0}
   note: Reaction 46
-- equation: H + HCO <=> CO + H2  # Reaction 47
+- equation: H + HCO <=> H2 + CO  # Reaction 47
   rate-constant: {A: 9.13e+12, b: 0.41, Ea: -215.57}
   note: Reaction 47
 - equation: HCO + OH <=> CO + H2O  # Reaction 48
   rate-constant: {A: 3.011e+13, b: 0.0, Ea: 0.0}
   note: Reaction 48
-- equation: 2 HCO <=> CH2O + CO  # Reaction 49
+- equation: HCO + HCO <=> CO + CH2O  # Reaction 49
   rate-constant: {A: 2.7e+13, b: 0.0, Ea: 0.0}
   note: Reaction 49
 - equation: HCO + O <=> CO2 + H  # Reaction 50
@@ -798,7 +893,7 @@ reactions:
 - equation: HCO + HO2 => CO2 + H + OH  # Reaction 51
   rate-constant: {A: 3.0e+13, b: 0.0, Ea: 0.0}
   note: Reaction 51
-- equation: 2 HCO => 2 CO + H2  # Reaction 52
+- equation: HCO + HCO => H2 + CO + CO  # Reaction 52
   rate-constant: {A: 3.0e+12, b: 0.0, Ea: 0.0}
   note: Reaction 52
 - equation: NH3 + M <=> H + NH2 + M  # Reaction 53
@@ -819,15 +914,15 @@ reactions:
   note: Reaction 57
 - equation: NH3 + NO2 <=> HONO + NH2  # Reaction 58
   duplicate: true
-  rate-constant: {A: 4.23562e-10, b: 6.48, Ea: 2.70076e+04}
+  rate-constant: {A: 4.235619e-10, b: 6.48, Ea: 2.700765e+04}
   note: Reaction 58
 - equation: NH3 + NO2 <=> HONO + NH2  # Reaction 59
   duplicate: true
-  rate-constant: {A: 0.268376, b: 4.02, Ea: 2.32505e+04}
+  rate-constant: {A: 0.2683758, b: 4.02, Ea: 2.325048e+04}
   note: Reaction 59
 - equation: NH2 + M <=> H + NH + M  # Reaction 60
   type: three-body
-  rate-constant: {A: 1.2e+15, b: 0.0, Ea: 7.60028e+04}
+  rate-constant: {A: 1.2e+15, b: 0.0, Ea: 7.600275e+04}
   note: Reaction 60
 - equation: H + NH2 <=> H2 + NH  # Reaction 61
   rate-constant: {A: 1.09e+05, b: 2.59, Ea: 1810.0}
@@ -851,7 +946,7 @@ reactions:
   rate-constant: {A: 2.38e+12, b: 0.112, Ea: -347.0}
   note: Reaction 67
 - equation: NH2 + OH <=> H + H2NO  # Reaction 68
-  rate-constant: {A: 6.3812e+13, b: 0.0, Ea: 1.84273e+04}
+  rate-constant: {A: 6.3812e+13, b: 0.0, Ea: 1.842734e+04}
   note: Reaction 68
 - equation: NH2 + O2 <=> HNO + OH  # Reaction 69
   rate-constant: {A: 0.029, b: 3.764, Ea: 1.8185e+04}
@@ -917,7 +1012,7 @@ reactions:
   rate-constant: {A: 9570.0, b: 2.46, Ea: 107.0}
   note: Reaction 88
 - equation: NH + O <=> H + NO  # Reaction 89
-  rate-constant: {A: 1.41e+14, b: -0.216, Ea: 46.3734}
+  rate-constant: {A: 1.41e+14, b: -0.21603, Ea: 46.37343}
   note: Reaction 89
 - equation: NH + OH <=> H + HNO  # Reaction 90
   rate-constant: {A: 1.51e+14, b: -0.314, Ea: -308.0}
@@ -947,10 +1042,10 @@ reactions:
   rate-constant: {A: 6.8e+14, b: -0.78, Ea: 20.0}
   note: Reaction 98
 - equation: NH + NO2 <=> HNO + NO  # Reaction 99
-  rate-constant: {A: 5.7184e+12, b: 0.0, Ea: 0.0}
+  rate-constant: {A: 5.718398e+12, b: 0.0, Ea: 0.0}
   note: Reaction 99
 - equation: NH + NO2 <=> N2O + OH  # Reaction 100
-  rate-constant: {A: 3.9738e+12, b: 0.0, Ea: 0.0}
+  rate-constant: {A: 3.973802e+12, b: 0.0, Ea: 0.0}
   note: Reaction 100
 - equation: N2 + M <=> 2 N + M  # Reaction 101
   type: three-body
@@ -958,7 +1053,7 @@ reactions:
   efficiencies: {H2O: 16.25}
   note: Reaction 101
 - equation: N + OH <=> H + NO  # Reaction 102
-  rate-constant: {A: 1.85e+14, b: -0.3094, Ea: 3.98725}
+  rate-constant: {A: 1.85e+14, b: -0.30941, Ea: 3.98725}
   note: Reaction 102
 - equation: N + O2 <=> NO + O  # Reaction 103
   rate-constant: {A: 5.84e+09, b: 1.01, Ea: 6200.0}
@@ -969,8 +1064,7 @@ reactions:
   note: Reaction 104
 - equation: N + NO <=> N2 + O  # Reaction 105
   duplicate: true
-  rate-constant: {A: 3.22982e+18, b: -1.88075, Ea: 756.8997}
-  negative-A: true
+  rate-constant: {A: 3.22982e+18, b: -1.88075, Ea: 756.8998}
   note: Reaction 105
 - equation: 2 NH2 (+M) <=> N2H4 (+M)  # Reaction 106
   type: falloff
@@ -986,7 +1080,7 @@ reactions:
   rate-constant: {A: 4.5e+11, b: 0.0, Ea: -1270.0}
   note: Reaction 108
 - equation: N2H4 + OH <=> H2O + N2H3  # Reaction 109
-  rate-constant: {A: 1.51e+08, b: 1.6491, Ea: -1503.96}
+  rate-constant: {A: 1.51e+08, b: 1.64915, Ea: -1503.965}
   note: Reaction 109
 - equation: N2H4 + O2 <=> HO2 + N2H3  # Reaction 110
   rate-constant: {A: 5.05e+12, b: 0.0, Ea: 3.21e+04}
@@ -995,7 +1089,7 @@ reactions:
   rate-constant: {A: 38.0, b: 3.44, Ea: -574.0}
   note: Reaction 111
 - equation: N2H4 + NH <=> N2H3 + NH2  # Reaction 112
-  rate-constant: {A: 60.9, b: 3.61, Ea: 5807.84}
+  rate-constant: {A: 60.9, b: 3.61, Ea: 5807.839}
   note: Reaction 112
 - equation: N + N2H4 <=> N2H3 + NH  # Reaction 113
   rate-constant: {A: 1.0e+10, b: 1.0, Ea: 2000.0}
@@ -1014,14 +1108,14 @@ reactions:
   note: Reaction 117
 - equation: N2H3 (+M) <=> NH + NH2 (+M)  # Reaction 118
   type: falloff
-  low-P-rate-constant: {A: 3.344e+42, b: -6.531, Ea: 1.26211e+05}
+  low-P-rate-constant: {A: 3.344e+42, b: -6.531, Ea: 1.262113e+05}
   high-P-rate-constant: {A: 1.479e+13, b: -0.179, Ea: 8.8748e+04}
   Troe: {A: 0.606, T3: 1.15583e+05, T1: 9186.0, T2: 9792.2}
   efficiencies: {AR: 1.0, H2: 3.0, HE: 1.0, NH3: 3.0}
   note: Reaction 118
 - equation: N2H3 + M <=> H + N2H2 + M  # Reaction 119
   type: three-body
-  rate-constant: {A: 3.54e+44, b: -7.9298, Ea: 6.80612e+04}
+  rate-constant: {A: 3.54e+44, b: -7.92978, Ea: 6.806116e+04}
   note: Reaction 119
 - equation: H + N2H3 <=> H2 + N2H2  # Reaction 120
   rate-constant: {A: 7476.0, b: 2.796, Ea: 4680.0}
@@ -1055,7 +1149,7 @@ reactions:
   note: Reaction 129
 - equation: N2H2 + M <=> H + NNH + M  # Reaction 130
   type: three-body
-  rate-constant: {A: 1.41e+43, b: -7.6036, Ea: 7.47655e+04}
+  rate-constant: {A: 1.41e+43, b: -7.60359, Ea: 7.476553e+04}
   efficiencies: {H2O: 7.0}
   note: Reaction 130
 - equation: H + N2H2 <=> H2 + NNH  # Reaction 131
@@ -1086,7 +1180,7 @@ reactions:
   rate-constant: {A: 5.6e+14, b: -0.385, Ea: -13.0}
   note: Reaction 139
 - equation: HO2 + NNH <=> H2O2 + N2  # Reaction 140
-  rate-constant: {A: 1.4e+04, b: 2.69, Ea: -1599.54}
+  rate-constant: {A: 1.4e+04, b: 2.69, Ea: -1599.535}
   note: Reaction 140
 - equation: NH + NNH <=> N2 + NH2  # Reaction 141
   rate-constant: {A: 5.0e+13, b: 0.0, Ea: 0.0}
@@ -1134,7 +1228,7 @@ reactions:
   note: Reaction 152
 - equation: NO2 + O <=> NO + O2  # Reaction 153
   duplicate: true
-  rate-constant: {A: 8.48e+16, b: -0.861, Ea: 1.21641e+04}
+  rate-constant: {A: 8.48e+16, b: -0.861, Ea: 1.216407e+04}
   note: Reaction 153
 - equation: 2 NO2 <=> 2 NO + O2  # Reaction 154
   rate-constant: {A: 4.5e+12, b: 0.0, Ea: 2.7599e+04}
@@ -1187,7 +1281,7 @@ reactions:
   rate-constant: {A: 1.66e+10, b: 1.18, Ea: -446.0}
   note: Reaction 166
 - equation: NH3 + NO <=> HNO + NH2  # Reaction 167
-  rate-constant: {A: 1458.3, b: 3.12, Ea: 5.44933e+04}
+  rate-constant: {A: 1458.295, b: 3.12, Ea: 5.449331e+04}
   note: Reaction 167
 - equation: HNO + O <=> NO + OH  # Reaction 168
   rate-constant: {A: 2.3e+13, b: 0.0, Ea: 0.0}
@@ -1292,27 +1386,27 @@ reactions:
   - {P: 31.6 atm, A: 7.91e+10, b: 0.64, Ea: 5519.0}
   - {P: 100.0 atm, A: 2.79e+10, b: 0.8, Ea: 6146.0}
   note: Reaction 188
-- equation: CO + NO2 <=> CO2 + NO  # Reaction 189
+- equation: CO + NO2 <=> NO + CO2  # Reaction 189
   rate-constant: {A: 9.0e+13, b: 0.0, Ea: 3.38e+04}
   note: Reaction 189
-- equation: CO + N2O <=> CO2 + N2  # Reaction 190
+- equation: CO + N2O <=> N2 + CO2  # Reaction 190
   rate-constant: {A: 2.7e+11, b: 0.0, Ea: 2.0237e+04}
   note: Reaction 190
-- equation: HCO + NO <=> CO + HNO  # Reaction 191
+- equation: HCO + NO <=> HNO + CO  # Reaction 191
   rate-constant: {A: 6.9e+12, b: 0.0, Ea: 0.0}
   note: Reaction 191
-- equation: HCO + HNO <=> CH2O + NO  # Reaction 192
+- equation: HCO + HNO <=> NO + CH2O  # Reaction 192
   rate-constant: {A: 0.58, b: 3.84, Ea: 115.0}
   note: Reaction 192
-- equation: HCO + NO2 <=> CO2 + H + NO  # Reaction 193
+- equation: HCO + NO2 <=> NO + CO2 + H  # Reaction 193
   rate-constant: {A: 2.3e+13, b: 0.0, Ea: 0.0}
   note: Reaction 193
-- equation: HCO + NO2 <=> CO + HONO  # Reaction 194
+- equation: HCO + NO2 <=> HONO + CO  # Reaction 194
   rate-constant: {A: 5.0e+12, b: 0.0, Ea: 0.0}
   note: Reaction 194
-- equation: HCO + NO2 <=> CO + NO + OH  # Reaction 195
+- equation: HCO + NO2 <=> NO + CO + OH  # Reaction 195
   rate-constant: {A: 5.0e+12, b: 0.0, Ea: 0.0}
   note: Reaction 195
-- equation: CH2O + NO2 <=> HCO + HONO  # Reaction 196
+- equation: CH2O + NO2 <=> HONO + HCO  # Reaction 196
   rate-constant: {A: 1600.0, b: 2.77, Ea: 1.373e+04}
   note: Reaction 196
