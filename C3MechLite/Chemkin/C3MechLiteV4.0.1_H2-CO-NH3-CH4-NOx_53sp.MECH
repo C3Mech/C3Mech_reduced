@@ -101,20 +101,20 @@ C H N O AR HE
 END
 
 SPECIES ! (53 species)
-HE                  H2                  H                   O                   
-OH                  H2O                 O2                  N2                  
-AR                  H2O2                HO2                 NH3                 
-NH2                 NO2                 HONO                NH                  
-N                   HNO                 NO                  H2NO                
-NNH                 N2O                 CO2                 CO                  
-CH4                 CH3                 CH3O2               CH3O2H              
-CH2                 HCO                 CH2O                C2H4                
-CH3O                CH2O2H              CH3OH               C2H5                
-C2H6                C2H3                CH2CHO              CH2CO               
-C2H2                CH2OH               HCCO                NC3H7               
-H2CN                CH3NO2              NC3H7O2             C3H6                
-C3H6OOH1-3          N2H2                N2H3                N2H4                
-CH3CHO              
+H2                  H                   O                   OH                  
+H2O                 O2                  H2O2                HO2                 
+NH3                 NH2                 NO2                 HONO                
+NH                  N                   HNO                 NO                  
+H2NO                NNH                 N2O                 CO2                 
+CO                  CH4                 CH3                 CH3O2               
+CH3O2H              CH2                 HCO                 CH2O                
+C2H4                CH3O                CH2O2H              CH3OH               
+C2H5                C2H6                C2H3                CH2CHO              
+CH2CO               C2H2                CH2OH               HCCO                
+NC3H7               H2CN                CH3NO2              NC3H7O2             
+C3H6                C3H6OOH1-3          N2H2                N2H3                
+N2H4                CH3CHO              AR                  N2                  
+HE                  
 END
 
 REACTIONS ! (445 reactions)

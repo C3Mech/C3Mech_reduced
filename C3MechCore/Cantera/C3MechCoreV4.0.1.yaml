@@ -205,7 +205,7 @@ phases:
 - name: gas
   thermo: ideal-gas
   elements: [C, H, N, O, Ar, He]
-  species: [HE, H2, H, O, OH, H2O, O2, N2, AR, H2O2, HO2, NH3, NH2, NO2,
+  species: [H2, H, O, OH, H2O, O2, H2O2, HO2, NH3, NH2, NO2,
     HONO, NH, N, HNO, NO, H2NO, NNH, N2O, N2H2, H2NN, N2H3, N2H4, H2NNO2,
     CO2, CO, CH4, OCHO, CH3, O2CHO, HO2CHO, CH3O2, CH3O2H, CH2, HCO, CH2O,
     C2H4, CH3O, CH2O2H, CH3OH, C2H5, C2H6, C2H3, CH2CHO, CH2CO, C2H2, CH2OH,
@@ -217,7 +217,7 @@ phases:
     C3H5-A, C3H5O, C3H6, C3H6OOH1-2, C3H6OOH1-3, C3H6O1-2, C3H6O1-3, C3H6OOH1-3O2,
     OCHCH2CH2O, AC3H5OOH, C3KET13, C2H3CHO, CH3CHCHO, CH2CH2CHO, CH3COCH2,
     C3H5-T, C3H5-S, C4H8-1, C4H71-4, CHOCHO, CH3CHCO, C3H4-P, CH, NCN, HCN,
-    NCO, CN] # OHV, CHV
+    NCO, CN, AR, N2, HE] # OHV, CHV
 
     # Please add OHV and CHV to the species list if OHV/CHV submechanisms are necessary
     # Also uncomment OHV/CHV submechanisms in the last section of the mechanism

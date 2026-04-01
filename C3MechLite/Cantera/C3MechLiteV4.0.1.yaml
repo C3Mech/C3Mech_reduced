@@ -205,12 +205,12 @@ phases:
 - name: gas
   thermo: ideal-gas
   elements: [C, H, N, O, Ar, He]
-  species: [HE, H2, H, O, OH, H2O, O2, N2, AR, H2O2, HO2, NH3, NH2, NO2,
+  species: [H2, H, O, OH, H2O, O2, H2O2, HO2, NH3, NH2, NO2,
     HONO, NH, N, HNO, NO, H2NO, NNH, N2O, N2H2, N2H3, N2H4, CO2, CO, CH4,
     CH3, CH3O2, CH3O2H, CH2, HCO, CH2O, C2H4, CH3O, CH2O2H, CH3OH, C2H5,
     C2H6, C2H3, CH2CHO, CH2CO, C2H2, CH2OH, C2H5O2, C2H5O2H, C2H5O, CH3CHO,
     HCCO, C3H8, NC3H7, H2CN, CH3NO2, NC3H7O2, IC3H7, C3H6, C3H6OOH1-3, C3H6OOH1-3O2,
-    OCHCH2CH2O, C3KET13]
+    OCHCH2CH2O, C3KET13, AR, N2, HE]
   kinetics: gas
   transport: mixture-averaged
   state: {T: 300.0, P: 1 atm}

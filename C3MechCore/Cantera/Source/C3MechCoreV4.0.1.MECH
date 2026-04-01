@@ -101,36 +101,36 @@ C H N O AR HE
 END
 
 SPECIES ! (118 species)
-HE                  H2                  H                   O                   
-OH                  H2O                 O2                  N2                  
-AR                  H2O2                HO2                 NH3                 
-NH2                 NO2                 HONO                NH                  
-N                   HNO                 NO                  H2NO                
-NNH                 N2O                 N2H2                H2NN                
-N2H3                N2H4                H2NNO2              CO2                 
-CO                  CH4                 OCHO                CH3                 
-O2CHO               HO2CHO              CH3O2               CH3O2H              
-CH2                 HCO                 CH2O                C2H4                
-CH3O                CH2O2H              CH3OH               C2H5                
-C2H6                C2H3                CH2CHO              CH2CO               
-C2H2                CH2OH               C2H5O2              C2H5O2H             
-C2H5O               CH3CHO              CH3CO               PC2H4OH             
-HCCO                C3H8                NC3H7               C4H10               
-CH2(S)              C2H5OH              C2H3OH              SC2H4OH             
-HOCHO               CH3OCH3             CH3OCH2             CH3OCH2O2           
-CH3OCH2O2H          CH3OCHO             CH2OCH2O2H          O2CH2OCH2O2H        
-HO2CH2OCHO          CH3OCH2O            OCH2OCHO            HNO2                
-H2CN                CH3NO2              HONO2               HCNO                
-C2H5NO2             NC3H7O2H            NC3H7O2             IC3H7O2H            
-IC3H7O2             NC3H7O              IC3H7O              CHCHO               
-O2CH2CHO            HO2CH2CO            IC3H7               C3H5-A              
-C3H5O               C3H6                C3H6OOH1-2          C3H6OOH1-3          
-C3H6O1-2            C3H6O1-3            C3H6OOH1-3O2        OCHCH2CH2O          
-AC3H5OOH            C3KET13             C2H3CHO             CH3CHCHO            
-CH2CH2CHO           CH3COCH2            C3H5-T              C3H5-S              
-C4H8-1              C4H71-4             CHOCHO              CH3CHCO             
-C3H4-P              CH                  NCN                 HCN                 
-NCO                 CN                  
+H2                  H                   O                   OH                  
+H2O                 O2                  H2O2                HO2                 
+NH3                 NH2                 NO2                 HONO                
+NH                  N                   HNO                 NO                  
+H2NO                NNH                 N2O                 N2H2                
+H2NN                N2H3                N2H4                H2NNO2              
+CO2                 CO                  CH4                 OCHO                
+CH3                 O2CHO               HO2CHO              CH3O2               
+CH3O2H              CH2                 HCO                 CH2O                
+C2H4                CH3O                CH2O2H              CH3OH               
+C2H5                C2H6                C2H3                CH2CHO              
+CH2CO               C2H2                CH2OH               C2H5O2              
+C2H5O2H             C2H5O               CH3CHO              CH3CO               
+PC2H4OH             HCCO                C3H8                NC3H7               
+C4H10               CH2(S)              C2H5OH              C2H3OH              
+SC2H4OH             HOCHO               CH3OCH3             CH3OCH2             
+CH3OCH2O2           CH3OCH2O2H          CH3OCHO             CH2OCH2O2H          
+O2CH2OCH2O2H        HO2CH2OCHO          CH3OCH2O            OCH2OCHO            
+HNO2                H2CN                CH3NO2              HONO2               
+HCNO                C2H5NO2             NC3H7O2H            NC3H7O2             
+IC3H7O2H            IC3H7O2             NC3H7O              IC3H7O              
+CHCHO               O2CH2CHO            HO2CH2CO            IC3H7               
+C3H5-A              C3H5O               C3H6                C3H6OOH1-2          
+C3H6OOH1-3          C3H6O1-2            C3H6O1-3            C3H6OOH1-3O2        
+OCHCH2CH2O          AC3H5OOH            C3KET13             C2H3CHO             
+CH3CHCHO            CH2CH2CHO           CH3COCH2            C3H5-T              
+C3H5-S              C4H8-1              C4H71-4             CHOCHO              
+CH3CHCO             C3H4-P              CH                  NCN                 
+HCN                 NCO                 CN                  AR                  
+N2                  HE                  
 
 ! Please add OHV and CHV to the species list if OHV/CHV submechanisms are necessary
 ! Also uncomment OHV/CHV submechanisms in the last section of the mechanism

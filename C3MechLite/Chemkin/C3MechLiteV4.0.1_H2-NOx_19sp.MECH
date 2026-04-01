@@ -101,11 +101,11 @@ C H N O AR HE
 END
 
 SPECIES ! (19 species)
-HE                  H2                  H                   O                   
-OH                  H2O                 O2                  N2                  
-AR                  H2O2                HO2                 NH3                 
-NH2                 NO2                 NH                  N                   
-NO                  NNH                 N2O                 
+H2                  H                   O                   OH                  
+H2O                 O2                  H2O2                HO2                 
+NH3                 NH2                 NO2                 NH                  
+N                   NO                  NNH                 N2O                 
+AR                  N2                  HE                  
 END
 
 REACTIONS ! (92 reactions)
