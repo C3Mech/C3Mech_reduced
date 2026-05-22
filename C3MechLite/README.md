@@ -1,5 +1,7 @@
-## Structure of this directory
+# Structure of this directory
 
-In the publications, we proposed 10 different reduced mechanisms based on C3MechLiteV4.0.1 based on the speedup ratio. The **Chemkin** and **Cantera** folders contain these 10 mechanisms.
+## Chemkin / Cantera
+These folders contain 10 different reduced mechanisms based on the speedup ratio, proposed in the publication (Both Chemkin and Cantera format). 
 
-The **Table3_all_mechanisms** folder contains all the different versions presented in Table 3 in the original publication (Table 2 in the corrigendum). Note that the numbers of species and reactions for each mechanism correspond to the ones in the corrigendum.
+**Table3_all_mechanisms**
+The folder contains all the different versions presented in Table 3 in the original publication (Table 2 in the corrigendum). Note that the numbers of species and reactions for each mechanism correspond to the ones in the corrigendum.
