@@ -1,5 +1,5 @@
 ## Number of species and reactions contained in each mechanism 
-## Table 3 in the original publication (Table 2 in the corrigendum)
+### Table 3 in the original publication (Table 2 in the corrigendum)
 
 | Mechanism                  | Species    | Reactions   |
 |----------------------------|:-----------:|:-------------|
