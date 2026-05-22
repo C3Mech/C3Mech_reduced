@@ -2,7 +2,7 @@
 ### Table 3 in the original publication (Table 2 in the corrigendum)
 
 | Mechanism                  | Species    | Reactions   |
-|----------------------------|:-----------:|:-------------|
+|----------------------------|:-----------:|:-------------:|
 | Table3_H2_11sp             |         11 |         30  |
 | Table3_H2-CO_14sp          |         14 |         42  |
 | Table3_H2-NOx_19sp         |         19 |         92  |
