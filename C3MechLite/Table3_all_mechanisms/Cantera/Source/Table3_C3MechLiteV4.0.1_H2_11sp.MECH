@@ -1,0 +1,235 @@
+! ================================================================================================== !
+!                                   !!! IMPORTANT NOTICE !!!                                         !
+! ================================================================================================== !
+!                                                                                                    !
+! A corrigendum for the original article has been published:                                         !
+! "C3MechLite: An integrated component library of compact kinetic mechanisms for low-carbon,         !
+!  carbon neutral and zero-carbon fuels" [Combustion and Flame 282 (2025) 114410].                   !
+!                                                                                                    !
+! Please USE the updated mechanism files (C3MechLiteV4.0.1/C3MechCoreV4.0.1)                         !
+! available on GitHub repository (https://github.com/C3Mech/C3Mech_reduced).                         !
+!                                                                                                    !
+! For more information, please visit fuelmech.org.                                                   !
+!                                                                                                    !
+! How to cite C3MechLiteV4.0.1 and C3MechCoreV4.0.1                                                  !
+! 1) Murakami, Y., Wang, Q. D., Liu, S., Zhu, Y., Wang, P., Pratali Maffei, L., Langer, R.,          !
+!    Faravelli, T., Pitsch, H., Klippenstein, S. J., Bergthorson, J., Bourque, G., Wagnon, S. W.,    !
+!    Senecal, P. K., & Curran, H. J. (2025). C3MechLite: An integrated component library of compact  !
+!    kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels,                        !
+!    Combustion and Flame, 282, 114410. https://doi.org/10.1016/j.combustflame.2025.114410.          !
+! 2) Murakami, Y., Wang, Q. D., Liu, S., Zhu, Y., Wang, P., Pratali Maffei, L., Langer, R.,          !
+!    Faravelli, T., Pitsch, H., Klippenstein, S. J., Bergthorson, J., Bourque, G., Wagnon, S. W.,    !
+!    Senecal, P. K., & Curran, H. J. (2026). Corrigendum to "C3MechLite: An integrated component     !
+!    library of compact kinetic mechanisms for low-carbon, carbon neutral and zero-carbon fuels"     !
+!    [Combustion and Flame 282 (2025) 114410], Combustion and Flame, 114912.                         !
+!    https://doi.org/10.1016/j.combustflame.2026.114912.                                             !
+!                                                                                                    !
+! ================================================================================================== !
+!                                                                                                    !
+!             C3MechLite: An integrated component library of compact kinetic mechanisms              !
+!                        for low-carbon, carbon neutral and zero-carbon fuels                        !
+!                                                                                                    !
+! ================================================================================================== !
+!                                                                                                    !
+! C3MechLiteV4.0.1 and C3MechCoreV4.0.1 have been generated based on C3MechV4.0.1 formulated         !
+! by the Computational Chemistry Consortium (C3), a collaborative research organization              !
+! including the University of Galway, Politecnico di Milano, RWTH Aachen University,                 !
+! Lawrence Livermore National Laboratory, Argonne National Laboratory and Convergent Science.        !
+!                                                                                                    !
+! < C3MechLiteV4.0.1 >                                                                               !
+! - 61 species and 519 reactions                                                                     !
+! - Intended to simulate natural gas combustion with NOx chemistry                                   !
+! - Targeting H2, CO, NH3, CH4, CH3OH, Natural gas (CH4 + C2H6/C3H8), and NOx                        !
+!                                                                                                    !
+! < C3MechCoreV4.0.1 >                                                                               !
+! - 118 species and 1006 reactions                                                                   !
+! - Covering a wider range of fuels up to C3                                                         !
+! - Targeting H2, CO, NH3, CH4, CH3OH, C2H6, DME, C2H5OH, C3H8, and NOx                              !
+!                                                                                                    !
+! Reaction counts listed above refer to the Cantera-compatible mechanism files (reference values).   !
+! CHEMKIN-Pro files show different reaction counts because LOWMX/TROEMX and                          !
+! LOWSP/TROESP keywords encode species-specific falloff behavior within grouped reactions.           !
+!                                                                                                    !
+! C3MechV4.0.1 is available from the GitHub repository:                                              !
+! https://github.com/C3Mech/C3Mech                                                                   !
+!                                                                                                    !
+! For more information, please visit fuelmech.org.                                                   !
+!                                                                                                    !
+! ================== Working Groups For C3MechLiteV4.0.1/C3MechCoreV4.0.1 ========================== !
+!                                                                                                    !
+! Author                  | Institution                                                              !
+! -------------------------------------------------------------------------------------------------- !
+! Yuki Murakami           | Combustion Chemistry Centre, School of Chemistry, Ryan Institute, MaREI, !
+!                         | University of Galway, Ireland                                            !
+! Quan-De Wang            | Carbon Neutrality Institute and School of Chemical Engineering,          !
+!                         | China University of Mining and Technology, China                         !
+! Shuaishuai Liu          | Convergent Science, United States of America                             !
+!                         |                                                                          !
+! Yuxiang Zhu             | Combustion Chemistry Centre, School of Chemistry, Ryan Institute, MaREI, !
+!                         | University of Galway, Ireland                                            !
+! Pengzhi Wang            | Combustion Chemistry Centre, School of Chemistry, Ryan Institute, MaREI, !
+!                         | University of Galway, Ireland                                            !
+! Luna Pratali Maffei     | Dipartimento di Chimica, Materiali ed Ingegneria Chimica "G. Natta",     !
+!                         | Politecnico di Milano, Italy                                             !
+! Raymond Langer          | Institute for Combustion Technology,                                     !
+!                         | RWTH Aachen University, Germany                                          !
+! Tiziano Faravelli       | Dipartimento di Chimica, Materiali ed Ingegneria Chimica "G. Natta",     !
+!                         | Politecnico di Milano, Italy                                             !
+! Heinz Pitsch            | Institute for Combustion Technology,                                     !
+!                         | RWTH Aachen University, Germany                                          !
+! Stephen J. Klippenstein | Chemical Sciences and Engineering Division,                              !
+!                         | Argonne National Laboratory, United States of America                    !
+! Jeff Bergthorson        | Alternative Fuels Laboratory, Department of Mechanical Engineering,      !
+!                         | McGill University, Canada                                                !
+! Gilles Bourque          | Alternative Fuels Laboratory, Department of Mechanical Engineering,      !
+!                         | McGill University, Canada                                                !
+! Scott W. Wagnon         | Lawrence Livermore National Laboratory, United States of America         !
+!                         |                                                                          !
+! Peter Kelly Senecal     | Convergent Science, United States of America                             !
+!                         |                                                                          !
+! Henry J. Curran         | Combustion Chemistry Centre, School of Chemistry, Ryan Institute, MaREI, !
+!                         | University of Galway, Ireland                                            !
+!                                                                                                    !
+! ================================================================================================== !
+!                              !!! Please do not remove this header !!!                              !
+! ================================================================================================== !
+
+! C3MechLiteV4.0.1_H2_11sp
+
+ELEMENTS
+C H N O AR HE
+END
+
+SPECIES ! (11 species)
+HE                  H2                  H                   O                   
+OH                  H2O                 O2                  N2                  
+AR                  H2O2                HO2                 
+END
+
+REACTIONS ! (30 reactions)
+
+! Reaction 1
+H2+M=H+H+M                          4.577000e+19      -1.400000e+00       1.044000e+05
+    HE / 0.8300 / H2 / 2.5000 / H2O / 12.0000 / O2 / 0.0000 / 
+
+! Reaction 2
+H+O2+H=H2+O2                        8.800000e+22      -1.835000e+00       8.000000e+02
+
+! Reaction 3
+H2+O=H+OH                           3.800000e+12       0.000000e+00       7.948000e+03
+DUPLICATE
+
+! Reaction 4
+H2+O=H+OH                           8.800000e+14       0.000000e+00       1.917500e+04
+DUPLICATE
+
+! Reaction 5
+H2+OH=H+H2O                         2.200000e+08       1.510000e+00       3.430000e+03
+
+! Reaction 6
+H+O2+H=OH+OH                        4.000000e+22      -1.835000e+00       8.000000e+02
+
+! Reaction 7
+H+O2+O=OH+O2                        7.350000e+22      -1.835000e+00       8.000000e+02
+
+! Reaction 8
+O+H+M=OH+M                          4.714000e+18      -1.000000e+00       0.000000e+00
+    AR / 0.7500 / O2 / 0.0000 / HE / 0.7500 / H2 / 2.5000 / H2O / 12.0000 / 
+
+! Reaction 9
+H+O2+OH=H2O+O2                      2.560000e+22      -1.835000e+00       8.000000e+02
+
+! Reaction 10
+H+OH(+M)=H2O(+M)                    2.500000e+13       2.340000e-01      -1.140000e+02
+    LOW  /   4.530000e+21      -1.810000e+00       4.920000e+02 /
+    TROE /   7.300000e-01       1.000000e-30       1.000000e+30       1.000000e+30 /
+    AR / 0.4000 / HE / 0.5700 / O2 / 0.0000 / N2 / 1.0000 / H2 / 1.5000 / H2O / 13.0000 / 
+
+! Reaction 11
+O+O+M=O2+M                          6.165000e+15      -5.000000e-01       0.000000e+00
+    HE / 0.8300 / AR / 0.8300 / H2 / 2.5000 / H2O / 12.0000 / 
+
+! Reaction 12
+O2+H=O+OH                           1.040000e+14       0.000000e+00       1.528600e+04
+
+! Reaction 13
+OH+OH=H2O+O                         2.880000e+06       1.790000e+00      -1.750000e+03
+
+! Reaction 14
+H2O2(+M)=OH+OH(+M)                  2.000000e+12       9.000000e-01       4.874900e+04
+    LOW  /   2.353018e+24      -2.292936e+00       4.874340e+04 /
+    TROE /   4.300000e-01       1.000000e-30       1.000000e+30 /
+    HE / 0.8800 / O2 / 1.5000 / N2 / 1.5000 / H2 / 2.0000 / H2O / 9.0000 / H2O2 / 9.9000 / 
+
+! Reaction 15
+H2O2+H=H2O+OH                       2.410000e+13       0.000000e+00       3.970000e+03
+
+! Reaction 16
+H2O2+H=HO2+H2                       1.650000e+10       1.000000e+00       6.000000e+03
+
+! Reaction 17
+H2O2+O=OH+HO2                       9.550000e+06       2.000000e+00       3.970000e+03
+
+! Reaction 18
+H2O2+OH=H2O+HO2                     1.740000e+12       0.000000e+00       3.180000e+02
+DUPLICATE
+
+! Reaction 19
+H2O2+OH=H2O+HO2                     7.590000e+13       0.000000e+00       7.269000e+03
+DUPLICATE
+
+! Reaction 20
+HO2+H=H2+O2                         2.800000e+06       2.090000e+00      -1.451000e+03
+
+! Reaction 21
+HO2+H=OH+OH                         7.079000e+13       0.000000e+00       2.950000e+02
+
+! Reaction 22
+HO2+O=OH+O2                         3.250000e+13       0.000000e+00       0.000000e+00
+
+! Reaction 23
+OH+HO2=H2O+O2                       1.930000e+20      -2.490000e+00       5.842400e+02
+DUPLICATE
+
+! Reaction 24
+OH+HO2=H2O+O2                       1.210000e+09       1.240000e+00      -1.307580e+03
+DUPLICATE
+
+! Reaction 25
+HO2+HO2=H2O2+O2                     1.930000e-02       4.120000e+00      -4.960000e+03
+
+! Reaction 26
+HO2+HO2=OH+OH+O2                    6.410000e+17      -1.540000e+00       8.540000e+03
+
+! Reaction 27
+H+O2(+M)=HO2(+M)                    4.660000e+12       4.400000e-01       0.000000e+00
+    LOW  /   4.066200e+19      -1.400000e+00      -1.805370e+02 /
+    TROE /   5.000000e-01       1.000000e+00       1.000000e+10       1.000000e+30 /
+    HE / 0.0000 / AR / 0.0000 / N2 / 0.0000 / O2 / 1.0000 / H2 / 2.0000 / H2O / 17.6000 / 
+
+! Reaction 28
+H+O2(+N2)=HO2(+N2)                  4.660000e+12       4.400000e-01       0.000000e+00
+    LOW  /   1.910000e+20      -1.556800e+00       2.538600e+02 /
+    TROE /   5.000000e-01       1.000000e+00       1.000000e+10       1.000000e+30 /
+
+! Reaction 29
+H+O2(+HE)=HO2(+HE)                  4.660000e+12       4.400000e-01       0.000000e+00
+    LOW  /   1.520000e+19      -1.230000e+00       0.000000e+00 /
+    TROE /   6.700000e-01       1.000000e-30       1.000000e+30       1.000000e+30 /
+
+! Reaction 30
+H+O2+AR=HO2+AR                               1.0                0.0                0.0
+    PLOG /    1.000000e-02          6.937020e+18      -1.191200e+00       1.140780e+01 /
+    PLOG /    1.000000e-01          6.779140e+18      -1.189300e+00       2.350540e+01 /
+    PLOG /    1.000000e+00          6.885210e+18      -1.192500e+00       6.134370e+01 /
+    PLOG /    5.000000e+00          8.114740e+18      -1.214100e+00       1.484190e+02 /
+    PLOG /    1.000000e+01          9.852410e+18      -1.238900e+00       2.289929e+02 /
+    PLOG /    2.000000e+01          1.374510e+19      -1.280800e+00       3.589709e+02 /
+    PLOG /    3.000000e+01          2.668050e+20      -1.678800e+00       6.104862e+02 /
+    PLOG /    4.000000e+01          3.883850e+20      -1.725200e+00       7.462754e+02 /
+    PLOG /    5.000000e+01          5.116210e+20      -1.758900e+00       8.570890e+02 /
+    PLOG /    1.000000e+02          8.717010e+20      -1.819500e+00       1.191988e+03 /
+    PLOG /    3.000000e+02          2.905840e+20      -1.663100e+00       1.493491e+03 /
+
+END
+
