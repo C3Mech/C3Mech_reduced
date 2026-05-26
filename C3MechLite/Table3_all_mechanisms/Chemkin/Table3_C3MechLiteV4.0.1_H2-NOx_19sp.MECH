@@ -101,11 +101,11 @@ C H N O AR HE
 END
 
 SPECIES ! (19 species)
-HE                  H2                  H                   O                   
-OH                  H2O                 O2                  N2                  
-AR                  H2O2                HO2                 NH3                 
-NH2                 NO2                 NH                  N                   
-NO                  NNH                 N2O                 
+H2                  H                   O                   OH                  
+H2O                 O2                  H2O2                HO2                 
+NH3                 NH2                 NO2                 NH                  
+N                   NO                  NNH                 N2O                 
+AR                  N2                  HE                  
 END
 
 REACTIONS ! (92 reactions)
@@ -212,7 +212,6 @@ H+O2(+M)=HO2(+M)                    4.660000e+12       4.400000e-01       0.0000
     TROESP / N2  5.000000e-01       1.000000e+00       1.000000e+10       1.000000e+30 /
     LOWSP  / HE  1.520000e+19      -1.230000e+00       0.000000e+00 /
     TROESP / HE  6.700000e-01       1.000000e-30       1.000000e+30       1.000000e+30 /
-
 
 ! Reaction 30
 H+O2+AR=HO2+AR                               1.0                0.0                0.0
